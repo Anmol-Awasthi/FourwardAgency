@@ -1,0 +1,48 @@
+Hero section with video
+Intro section
+Carousel section
+Football section
+Testimonials
+Footer
+
+
+
+-------- Work Page ---------
+
+Hero text
+Works
+2% profit
+Footer
+
+
+
+--------- Services Page ----------
+
+Hero text with video
+Horizontal slider text - Our Services
+4 parts with each having 3 internal sliders
+Footer
+
+
+--------- About Page ---------
+
+Hero text
+Intro text
+Our vision with huge image
+Global section with working globe
+Country name horizontal slider
+2%
+Footer
+
+
+------- Contact Page -----------
+
+Get in touch 
+Footer
+
+
+
+
+----- Menu Component --------
+
+Basic menu component to go

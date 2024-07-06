@@ -1,0 +1,22 @@
+/* global.css */
+
+::selection {
+    background-color: #FFFF00; /* Background color when selected */
+    color: black; /* Text color when selected */
+  }
+  
+  ::-moz-selection {
+    background-color: #FFFF00; /* Firefox specific */
+    color: black; /* Firefox specific */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @font-face {
+    font-family: 'NHaasGroteskTXPro';
+    src: url('/public/fonts/NHaasGroteskTXPro-55Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  

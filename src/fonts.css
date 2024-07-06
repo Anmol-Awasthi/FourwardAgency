@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Formula Condensed';
+    src: url('/fonts/FormulaCondensed-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Formula Condensed';
+    src: url('/fonts/FormulaCondensed-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
