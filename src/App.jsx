@@ -1,20 +1,23 @@
 // src/App.jsx
-import React, { useEffect } from 'react';
-import './index.css';
-import Hero from './components/Home/Hero';
-import Navbar from './components/Home/Navbar';
-import Intro from './components/Home/Intro';
-import Lenis from '@studio-freight/lenis';
-import Marquee from './components/Home/Marquee';
-import Testimonials from './components/Home/Testimonials';
-import Footer from './components/Home/Footer';
+import React, { useEffect } from "react";
+import "./index.css";
+import Hero from "./components/Home/Hero";
+import Navbar from "./components/Home/Navbar";
+import Intro from "./components/Home/Intro";
+import Lenis from "@studio-freight/lenis";
+import Marquee from "./components/Home/Marquee";
+import Testimonials from "./components/Home/Testimonials";
+import Footer from "./components/Home/Footer";
+import HeroText from "./components/Work/HeroText";
+import MainWorks from "./components/Work/MainWorks";
+import TwoPercent from "./components/Work/TwoPercent";
 
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.08,
       smooth: true,
-      direction: 'vertical',
+      direction: "vertical",
       wrapper: window,
       content: document.body,
     });
@@ -29,12 +32,22 @@ const App = () => {
 
   return (
     <>
+      {/* Home starts */}
       <Navbar />
       <Hero />
       <Intro />
       <Marquee />
       <Testimonials />
       <Footer />
+      {/* Home ends */}
+
+      {/*Work starts */}
+      <Navbar />
+      <HeroText />
+      <MainWorks />
+      <TwoPercent />
+      <Footer />
+      {/* Work ends */}
     </>
   );
 };
