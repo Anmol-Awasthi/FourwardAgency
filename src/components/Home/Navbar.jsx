@@ -1,63 +1,22 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import React from "react";
+import AnimatedText from "./AnimatedText";
 
 const Navbar = () => {
-  const navItems = ['WORK', 'SERVICES', 'FOURWARD', 'ABOUT', 'CONTACT'];
-  const itemsRef = useRef([]);
-
-  useEffect(() => {
-    itemsRef.current.forEach(item => {
-      const word = item.querySelector('.word');
-      const shadowWord = item.querySelector('.shadow-word');
-      
-      const hoverIn = () => {
-        const letters = word.querySelectorAll('span');
-        const shadowLetters = shadowWord.querySelectorAll('span');
-        
-        shadowLetters.forEach((letter, i) => {
-          gsap.to(letter, { y: '100%', opacity: 0, delay: i * 0.05 });
-          gsap.fromTo(letters[i], { y: '-100%', opacity: 0 }, { y: '0%', opacity: 1, delay: 0.5 + i * 0.05 });
-        });
-      };
-      
-      const hoverOut = () => {
-        const letters = word.querySelectorAll('span');
-        const shadowLetters = shadowWord.querySelectorAll('span');
-        
-        shadowLetters.forEach((letter, i) => {
-          gsap.to(letter, { y: '-100%', opacity: 0, delay: i * 0.05 });
-          gsap.fromTo(letters[i], { y: '100%', opacity: 0 }, { y: '0%', opacity: 1, delay: 0.5 + i * 0.05 });
-        });
-      };
-      
-      item.addEventListener('mouseenter', hoverIn);
-      item.addEventListener('mouseleave', hoverOut);
-    });
-  }, []);
+  const navItems = ["WORK", "SERVICES", "FOURWARD", "ABOUT", "CONTACT"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-16 bg-transparent z-50 font-formula tracking-wider text-xl font-bold">
-      <ul className="flex items-center justify-between mx-6 gap-10 h-full text-white">
+    <nav className="fixed top-0 left-0 w-full h-16 bg-transparent z-50 text-gray-700 font-formula bg-cyan-500 tracking-[0.5rem] text-[1.5rem] font-bold">
+      <ul className="flex items-center justify-between mx-6 gap-10 h-full tracking-[0.1rem] text-white text-2xl font-bold">
         {navItems.map((item, index) => (
-          <li
-            key={index}
-            className={`${
-              item === 'FOURWARD'
-                ? 'text-gray-200 text-3xl tracking-widest font-extrabold cursor-pointer'
-                : 'text-gray-200 opacity-80 text-xl font-semibold cursor-pointer'
-            } relative overflow-hidden`}
-            ref={el => itemsRef.current[index] = el}
-          >
-            <span className="word inline-block relative transition-opacity duration-300 ease-in-out">
-              {item.split('').map((char, i) => (
-                <span key={i} className="inline-block transition-transform duration-500">{char}</span>
-              ))}
-            </span>
-            <span className="shadow-word absolute inline-block top-0 left-0 w-full text-center opacity-0 transition-opacity duration-300 ease-in-out">
-              {item.split('').map((char, i) => (
-                <span key={i} className="inline-block transition-transform duration-500">{char}</span>
-              ))}
-            </span>
+          <li key={index}>
+            <AnimatedText
+              text={item}
+              customClasses={
+                item === "FOURWARD"
+                  ? "text-gray-200 text-3xl tracking-widest font-formula font-extrabold hover:text-white hover:opacity-100"
+                  : "text-gray-200 opacity-80 text-xl font-semibold hover:text-white hover:opacity-100"
+              }
+            />
           </li>
         ))}
       </ul>
@@ -66,3 +25,65 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+// import React from 'react';
+
+// const Navbar = () => {
+//   const navItems = ['WORK', 'SERVICES', 'FOURWARD', 'ABOUT', 'CONTACT'];
+
+//   return (
+//     <nav className="fixed top-0 left-0 w-full h-16 bg-transparent z-50 text-gray-700 font-formula bg-cyan-500 tracking-[0.5rem] text-[1.5rem] font-bold">
+//       <ul className="flex items-center justify-between mx-6 gap-10 h-full tracking-[0.1rem] text-white text-2xl font-bold">
+//         {navItems.map((item, index) => (
+//           <li key={index}>
+//             <a
+//               href={`#${item}`}
+//               data-link-alt={item}
+//               className={`${
+//                 item === 'FOURWARD'
+//                   ? 'text-red-500 text-3xl tracking-widest font-formula font-extrabold relative block overflow-hidden'
+//                   : 'text-red-500 opacity-80 text-xl font-semibold relative block overflow-hidden'
+//               }`}
+//             >
+//               <span className="block transition-transform transform hover:-translate-y-full hover:opacity-0 duration-500">{item}</span>
+//               <span className="absolute left-0 top-full opacity-0 hover:opacity-100 hover:top-0 transition-all duration-500" aria-hidden="true">{item}</span>
+//             </a>
+//           </li>
+//         ))}
+//       </ul>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+// a[data-link-alt] {
+//   position: relative;
+//   display: block;
+//   overflow: hidden;
+// }
+
+// a[data-link-alt] > span {
+//   display: block;
+//   transition: transform 0.5s, opacity 0.5s;
+// }
+
+// a[data-link-alt] > span:nth-child(2) {
+//   position: absolute;
+//   left: 0;
+//   top: 100%;
+//   opacity: 0;
+//   transition: all 0.5s;
+// }
+
+// a[data-link-alt]:hover > span:nth-child(1) {
+//   transform: translateY(-100%);
+//   opacity: 0;
+// }
+
+// a[data-link-alt]:hover > span:nth-child(2) {
+//   top: 0;
+//   opacity: 1;
+// }

@@ -17,12 +17,12 @@ const Marquee = () => {
         animate={{ x: ["0%", "-100%"] }}
         transition={{
           repeat: Infinity,
-          duration: 30,
+          duration: 150,
           ease: "linear",
         }}
       >
-        {[...images, ...images].map((image, index) => (
-          <div className="flex-none w-[10%] h-[10%] mx-14" key={index}>
+        {[...images, ...images,...images, ...images,...images, ...images,...images, ...images,...images, ...images,...images, ...images].map((image, index) => (
+          <div className="flex-none w-[1.5%] h-[10%] mx-14" key={index}>
             <img
               src={image}
               className="w-full h-full object-cover rounded-md"

@@ -57,9 +57,8 @@ function Testimonials() {
         </div>
       </div>
       <div className="flex items-center justify-center mt-4">
-        <div className="h-9 w-7 bg-transparent border-[1px] rounded-br-none rounded-tr-none border-white rounded-sm cursor-pointer"></div>
-        <button className="text-left font-formula tracking-wider px-3 py-1.5 font-normal bg-white text-black rounded-tl-none rounded-bl-none rounded-sm border-gray-200 flex items-center justify-center">
-          OUR SERVICES
+        <button class="text-zinc-400 hover:text-white font-formula backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent rounded-md py-2 px-3 shadow hover:shadow-white tracking-widest duration-700">
+          WORK WITH US
         </button>
       </div>
     </div>
