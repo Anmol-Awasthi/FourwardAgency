@@ -42,7 +42,7 @@ const App = () => {
       {/* Home ends */}
 
       {/*Work starts */}
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroText />
       <MainWorks />
       <TwoPercent />
