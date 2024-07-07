@@ -26,9 +26,9 @@ function Footer() {
             digital world.
           </div>
           <div className="flex items-center justify-start mt-6">
-            <button class="text-zinc-300 hover:text-white font-formula backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent rounded-md py-2 px-3 shadow hover:shadow-white tracking-widest duration-700">
-              CONTACT US
-            </button>
+          <button className="relative rounded-md py-2 px-3 shadow backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent text-zinc-400 font-formula tracking-widest duration-500 overflow-hidden hover:text-white hover:shadow-zinc-200">
+                <AnimatedText text="CONTACT US" customClasses="" />
+              </button>
           </div>
         </div>
       </div>
@@ -37,13 +37,13 @@ function Footer() {
         <div className="h-[1px] bg-gray-500 w-[96vw] opacity-40"></div>
       </div>
 
-      <div className=" mx-16 font-formula text-lg mt-[60px] text-white flex items-center justify-between opacity-80">
+      <div className=" mx-16 font-formula text-lg mt-[60px] text-white flex items-center justify-between">
         <div className="flex items-center gap-8 font-normal tracking-wider">
-          <AnimatedText text="WORK" customClasses="cursor-pointer" />
-          <AnimatedText text="SERVICES" customClasses="cursor-pointer" />
-          <AnimatedText text="ABOUT" customClasses="cursor-pointer" />
-          <AnimatedText text="CONTACT" customClasses="cursor-pointer" />
-          <AnimatedText text="2%" customClasses="cursor-pointer" />
+          <AnimatedText text="WORK" customClasses="cursor-pointer hover:text-white opacity-80 hover:opacity-100" />
+          <AnimatedText text="SERVICES" customClasses="cursor-pointer hover:text-white opacity-80 hover:opacity-100" />
+          <AnimatedText text="ABOUT" customClasses="cursor-pointer hover:text-white opacity-80 hover:opacity-100" />
+          <AnimatedText text="CONTACT" customClasses="cursor-pointer hover:text-white opacity-80 hover:opacity-100" />
+          <AnimatedText text="2%" customClasses="cursor-pointer hover:text-white opacity-80 hover:opacity-100" />
         </div>
         <div className="flex items-center justify-center gap-8">
           <motion.svg
