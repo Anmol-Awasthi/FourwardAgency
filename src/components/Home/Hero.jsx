@@ -28,7 +28,8 @@ const Hero = () => {
             </h1>
           </div>
         </div>
-        <div className="mt-3 flex justify-between w-full px-16">
+       <div className="flex items-center justify-center">
+       <div className="flex justify-between w-[90vw] absolute top-[40%] items-center ">
           <div className="text-center">
             <p className="text-gray-300 tracking-widest font-formula text-base font-semibold">
               FOURWARD AGENCY
@@ -46,6 +47,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
+       </div>
       </div>
     </div>
   );

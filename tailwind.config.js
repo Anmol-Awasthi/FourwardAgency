@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         formula: ['"Formula Condensed"', 'sans-serif'],
         neue: ['NHaasGroteskTXPro', 'sans-serif'],
+        
       },
     },
   },
