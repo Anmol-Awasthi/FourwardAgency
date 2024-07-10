@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../AnimatedText";
 
 function Testimonials() {
   return (
@@ -59,7 +59,7 @@ function Testimonials() {
       </div>
       <div className="flex items-center justify-center mt-4">
       <button className="relative rounded-md py-2 px-3 shadow backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent text-zinc-400 font-formula tracking-widest duration-500 overflow-hidden hover:text-white hover:shadow-zinc-200">
-                <AnimatedText text="WORK WITH US" customClasses="" />
+                <AnimatedText text="WORK WITH US" customClassesForText="" />
               </button>
       </div>
     </div>

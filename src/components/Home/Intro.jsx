@@ -1,6 +1,6 @@
 import React from "react";
 import heroIntro from "../../assets/Home-Intro.png";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../AnimatedText";
 
 function Intro() {
   return (
@@ -45,7 +45,7 @@ function Intro() {
             </div>
             <div className="flex items-center justify-start mt-4">
               <button className="relative rounded-md py-2 px-3 shadow backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent text-zinc-400 font-formula tracking-widest duration-500 overflow-hidden hover:text-white hover:shadow-zinc-200">
-                <AnimatedText text="OUR SERVICES" customClasses="" />
+                <AnimatedText text="OUR SERVICES" customClassesForText="" />
               </button>
             </div>
           </div>

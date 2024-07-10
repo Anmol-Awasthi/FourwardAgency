@@ -1,16 +1,11 @@
-// src/App.jsx
-import React, { useEffect } from "react";
-import "./index.css";
-import Hero from "./components/Home/Hero";
-import Navbar from "./components/Home/Navbar";
-import Intro from "./components/Home/Intro";
+import React, { useEffect, useLayoutEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Lenis from "@studio-freight/lenis";
-import Marquee from "./components/Home/Marquee";
-import Testimonials from "./components/Home/Testimonials";
-import Footer from "./components/Home/Footer";
-import HeroText from "./components/Work/HeroText";
-import MainWorks from "./components/Work/MainWorks";
-import TwoPercent from "./components/Work/TwoPercent";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import IndexHome from "./components/Home/IndexHome";
+import IndexWork from "./components/Work/IndexWork";
+import IndexService from "./components/ServicePage/IndexService";
 
 const App = () => {
   useEffect(() => {
@@ -31,25 +26,40 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      {/* Home starts */}
-      <Navbar />
-      <Hero />
-      <Intro />
-      <Marquee />
-      <Testimonials />
-      <Footer />
-      {/* Home ends */}
+    <Router>
+      <ScrollToTop />
+      <Content />
+    </Router>
+  );
+};
 
-      {/*Work starts */}
-      {/* <Navbar /> */}
-      <HeroText />
-      <MainWorks />
-      <TwoPercent />
+const Content = () => {
+  const location = useLocation();
+
+  return (
+    <>
+      <Navbar color={location.pathname === '/services' ? 'text-[#001514]' : ''}  customClassesForText={location.pathname === '/services' ? 'text-[#001514]' : ''} lineColor={location.pathname === '/services' ? '#001514' : 'white'} />
+      <main>
+        <Routes>
+          <Route path="/" element={<IndexHome />} />
+          <Route path="/work" element={<IndexWork />} />
+          <Route path="/services" element={<IndexService />} />
+          {/* Add other routes here */}
+        </Routes>
+      </main>
       <Footer />
-      {/* Work ends */}
     </>
   );
+};
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 };
 
 export default App;
