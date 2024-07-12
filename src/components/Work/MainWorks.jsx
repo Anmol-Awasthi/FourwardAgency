@@ -63,8 +63,8 @@ function MainWorks() {
           {videoData.map((data, index) => (
             <div key={index} className='flex flex-col items-center'>
               <VideoCard imageSrc={data.imageSrc} videoSrc={data.videoSrc} />
-              <p className='mt-6 font-formula tracking-wide self-start leading-none opacity-80 text-2xl text-white text-start'>{videoText1[index]}</p>
-              <p className='font-formula tracking-widest self-start mb-5 opacity-80 text-base text-gray-400 font-medium  text-start'>{videoText2[index]}</p>
+              <p className='mt-6 font-formula font-extrabold tracking-wide self-start leading-none opacity-80 text-2xl text-white text-start'>{videoText1[index]}</p>
+              <p className='font-formula tracking-widest font-bold self-start mb-5 opacity-80 text-base text-gray-400 text-start'>{videoText2[index]}</p>
             </div>
           ))}
         </div>

@@ -19,7 +19,7 @@ const Navbar = ({ color = "text-gray-200", customClassesForText, lineColor = "wh
           if (item.name === "FOURWARD") {
             itemClasses = `${color} absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-3xl sm:text-3xl tracking-widest opacity-90 font-formula font-extrabold hover:text-white hover:opacity-100`;
           } else {
-            itemClasses = `${color} opacity-80 text-xl sm:text-xl font-medium hover:text-white hover:opacity-100`;
+            itemClasses = `${color} opacity-80 text-xl sm:text-xl font-bold hover:text-white hover:opacity-100`;
           }
 
           // Add hidden class to items with mobileHide true

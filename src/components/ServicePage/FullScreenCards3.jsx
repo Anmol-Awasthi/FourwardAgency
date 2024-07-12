@@ -20,11 +20,37 @@ const FullScreenCards = () => {
   ];
 
   return (
-    <div className="flex w-full bg-[#F1F1F1] h-[120vh] pt-[10vh] pb-[10vh]">
-      <div className="flex items-center justify-center w-full h-full">
-        {/* Left Side (Media) */}
-        <div className="w-[50vw] mx-[10vw] h-full flex justify-center items-center">
-          <div className="w-full h-[99vh] rounded-md overflow-hidden relative">
+    <div className="flex flex-col md:flex-row w-full bg-[#F1F1F1] h-screen md:h-[120vh] pt-[10vh] pb-[10vh]">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full h-[80vh] md:h-full relative">
+        {/* Text Section */}
+        <div className="block md:hidden w-full md:w-[50vw] md:mr-32 md:ml-16 h-full flex flex-col font-formula justify-center items-start px-4 md:px-0">
+          <div className="text-4xl md:text-6xl font-semibold tracking-wide">
+            USER EXPERIENCE
+          </div>
+          <div className="font-neue mt-3 text-xs md:text-sm text-[#001514cc]">
+            Design and development of attractive and intuitive websites, customised to reflect the identity of our clients' companies.
+          </div>
+
+          <div className="w-full tracking-wide mt-8 text-lg md:text-2xl font-bold flex flex-col justify-center items-start">
+            {works.map((work, index) => (
+              <motion.div
+                key={index}
+                className={`cursor-pointer py-2 border-t border-b border-gray-300 w-full text-left ${
+                  selectedWork === index ? "text-black" : "text-gray-500"
+                }`}
+                initial={{ opacity: 0.9 }}
+                whileHover={{ opacity: 1 }}
+                onMouseEnter={() => setSelectedWork(index)}
+              >
+                {work.title}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Media Section */}
+        <div className="w-[90vw] md:w-[50vw] mx-0 md:mx-[10vw] h-screen md:h-full flex justify-center items-center">
+          <div className="w-full h-full md:h-[99vh] rounded-md overflow-hidden relative">
             {works.map((work, index) => (
               <motion.div
                 key={index}
@@ -60,16 +86,16 @@ const FullScreenCards = () => {
           </div>
         </div>
 
-        {/* Right Side (Text Titles) */}
-        <div className="w-[50vw] mr-32 ml-16 h-full flex flex-col font-formula justify-center items-start">
-          <div className="text-6xl font-semibold tracking-wide">
-          USER EXPERIENCE
+        {/* Text Section for Desktop */}
+        <div className="hidden md:block w-full md:w-[50vw] md:mr-32 md:ml-16 h-full md:flex flex-col font-formula justify-center items-start px-4 md:px-0">
+          <div className="text-4xl md:text-6xl font-semibold tracking-wide">
+            USER EXPERIENCE
           </div>
-          <div className="font-neue text-sm text-[#001514cc]">
-          Design and development of attractive and intuitive websites, customised to reflects the identity of our clients companies.
+          <div className="font-neue mt-3 text-xs md:text-sm text-[#001514cc]">
+            Design and development of attractive and intuitive websites, customised to reflect the identity of our clients' companies.
           </div>
 
-          <div className="w-full tracking-wide mt-8 text-2xl flex flex-col justify-center items-start">
+          <div className="w-full tracking-wide mt-8 text-lg md:text-2xl font-bold flex flex-col justify-center items-start">
             {works.map((work, index) => (
               <motion.div
                 key={index}
