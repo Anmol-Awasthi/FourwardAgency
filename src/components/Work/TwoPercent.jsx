@@ -22,7 +22,6 @@ function TwoPercent() {
                 src={TwoPercentBanner}
                 alt="Two Percent Banner"
               />
-
               <div className="text-[#182B2A] pr-5">
                 In the fast-paced world of marketing and audiovisual production,
                 where creativity meets strategy, FOURWARD stands out not just for

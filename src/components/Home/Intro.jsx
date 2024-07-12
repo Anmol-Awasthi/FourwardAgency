@@ -1,8 +1,12 @@
 import React from "react";
 import heroIntro from "../../assets/Home-Intro.png";
+import { useNavigate } from 'react-router-dom';
 import AnimatedText from "../AnimatedText";
 
 function Intro() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="h-screen w-full">
       <div className="relative flex flex-col items-center justify-center w-full h-full text-center text-white mt-20 md:mt-40 font-formula">
@@ -85,7 +89,8 @@ function Intro() {
             Our talented team is capable of tackling <br /> challenges of all
             kinds
             <div className="flex items-center justify-start mt-4">
-              <button className="relative rounded-md py-2 px-3 shadow backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent text-zinc-300 font-formula font-bold tracking-widest duration-500 overflow-hidden hover:text-white hover:shadow-zinc-100">
+              <button className="relative rounded-md py-2 px-3 shadow backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,108,121,0.16)] to-transparent text-zinc-300 font-formula font-bold tracking-widest duration-500 overflow-hidden hover:text-white hover:shadow-zinc-100"
+              onClick={() => navigate('/services')}>
                 <AnimatedText text="OUR SERVICES" customClassesForText="" />
               </button>
             </div>

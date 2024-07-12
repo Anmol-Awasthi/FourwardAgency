@@ -33,7 +33,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
       <div className="flex items-center justify-center">
         <div className="h-[2px] bg-gray-500 w-[96vw] opacity-40"></div>
       </div>
