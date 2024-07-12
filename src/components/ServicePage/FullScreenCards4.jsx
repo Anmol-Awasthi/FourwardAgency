@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Service1 from "../../assets/servicepage/Service-4-1.mp4";
-import Service2 from "../../assets/servicepage/Service-4-2.jpg";
+import Service2 from "../../assets/servicepage/Service-1-1.jpg";
 import Service3 from "../../assets/servicepage/Service-4-3.mp4";
 
 const FullScreenCards = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Service1 from "../../assets/servicepage/Service-2-1.jpg";
+import Service1 from "../../assets/servicepage/Service-1-2.jpg";
 import Service2 from "../../assets/servicepage/Service-2-2.mp4";
 import Service3 from "../../assets/servicepage/Service-2-3.mp4";
 

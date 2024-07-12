@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Service1 from "../../assets/servicepage/Service-3-1.mp4";
+import Service1 from "../../assets/servicepage/Service-2-2.mp4";
 import Service2 from "../../assets/servicepage/Service-3-2.mp4";
 
 const FullScreenCards = () => {
