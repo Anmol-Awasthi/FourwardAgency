@@ -37,7 +37,7 @@ function Footer() {
         <div className="h-[2px] bg-gray-500 w-[96vw] opacity-40"></div>
       </div>
 
-      <div className="redirects w-full bg-red-500 md:mx-16 font-formula text-xl mt-8 md:mt-[60px] text-white flex flex-col md:flex-row items-center justify-between">
+      <div className="redirects max-w-[90vw] mx-auto md:w-full md:mx-16 font-formula text-xl mt-8 md:mt-[60px] text-white flex flex-col md:flex-row items-center justify-between">
         <div className="flex md:flex-row items-center gap-8 font-semibold tracking-wider">
           <Link to="/work">
             <AnimatedText
