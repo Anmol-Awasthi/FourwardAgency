@@ -13,16 +13,17 @@
     scroll-behavior: smooth;
   }
 
-@font-face {
-  font-family: 'NHaasGroteskTXPro';
-  src: url('/fonts/NHaasGroteskTXPro-55Rg.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Formula Condensed';
-  src: url('/fonts/FormulaCondensed-Light.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'NHaasGroteskTXPro';
+    src: url('/Fonts/Nnhaasgrotesktxpro-55rg-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Formula Condensed';
+    src: url('/Fonts/formulacondensed-light-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
