@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import IndexHome from "./components/Home/IndexHome";
 import IndexWork from "./components/Work/IndexWork";
 import IndexService from "./components/ServicePage/IndexService";
+import IndexAbout from "./components/About/IndexAbout";
 
 const App = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const Content = () => {
           <Route path="/" element={<IndexHome />} />
           <Route path="/work" element={<IndexWork />} />
           <Route path="/services" element={<IndexService />} />
+          <Route path="/about" element={<IndexAbout />} />
           {/* Add other routes here */}
         </Routes>
       </main>

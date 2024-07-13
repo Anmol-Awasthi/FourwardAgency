@@ -12,7 +12,7 @@ const Navbar = ({ color = "text-gray-200", customClassesForText, lineColor = "wh
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full mt-4 sm:mt-0 h-16 bg-transparent z-50 text-gray-700 font-formula tracking-[0.5rem] text-[1.5rem] font-bold">
+    <nav className="fixed top-0 left-0 md:w-full w-[100vw] mt-4 sm:mt-0 h-16 bg-transparent z-50 text-gray-700 font-formula tracking-[0.5rem] text-[1.5rem] font-bold">
       <ul className="flex items-center justify-between mx-3 md:mx-6 md:gap-10 h-full tracking-[0.1rem] text-white font-bold">
         {navItems.map((item, index) => {
           let itemClasses;

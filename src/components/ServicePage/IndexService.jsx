@@ -1,6 +1,5 @@
 import React from 'react'
 import Shine from './Shine'
-import InfiniteTextCarousel from './InfiniteTextCarousel'
 import FullScreenCards1 from './FullScreenCards1'
 import FullScreenCards2 from './FullScreenCards2'
 import FullScreenCards3 from './FullScreenCards3'

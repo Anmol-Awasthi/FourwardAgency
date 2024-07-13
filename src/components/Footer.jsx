@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="relative w-full h-[90vh] mt-20">
+    <footer className="relative max-w-[100vw] h-[90vh] mt-20">
       <div className="flex items-center justify-center">
         <div className="h-[1px] bg-gray-500 w-[96vw] opacity-40"></div>
       </div>
@@ -15,7 +15,7 @@ function Footer() {
           <div className="tagline text-left text-neue ml-1 tracking-[0.17em] md:tracking-[0.1em] text-white text-2xl md:text-4xl opacity-80 flex-grow">
             Embrace the future, lead
           </div>
-          <div className="text-white text-left text-6xl md:text-[80px] tracking-widest md:tracking-wider opacity-80 font-bold flex-grow">
+          <div className="text-white text-left text-[2.8rem] md:text-[80px] tracking-widest md:tracking-wider opacity-80 font-bold flex-grow">
             FOURWARD
           </div>
         </div>
