@@ -4,7 +4,7 @@ import ShineIntroVideo from '../../assets/servicepage/Service-Shine.mp4'
 function Shine() {
   return (
     <>
-    <div className=" relative bg-[#D2D9D8] bg-opacity-90 w-full h-[90vh] sm:h-[80vh] md:h-[150vh]">
+    <div className=" relative bg-[#D2D9D8] bg-opacity-90 w-full h-[99vh] sm:h-[80vh] md:h-[150vh]">
       <div className='md:w-[70vw] w-[90vw] text-6xl md:text-[22vh] font-formula font-extrabold text-center absolute top-[30%] md:top-[46vh] left-[50%] -translate-x-1/2 -translate-y-1/2 tracking-wide md:leading-[7.5rem] text-[#001514]'>
         SHINE IN THE DIGITAL WORLD
       </div>
