@@ -7,6 +7,7 @@ import IndexHome from "./components/Home/IndexHome";
 import IndexWork from "./components/Work/IndexWork";
 import IndexService from "./components/ServicePage/IndexService";
 import IndexAbout from "./components/About/IndexAbout";
+import IndexContact from "./components/Contact/IndexContact";
 
 const App = () => {
   useEffect(() => {
@@ -46,6 +47,7 @@ const Content = () => {
           <Route path="/work" element={<IndexWork />} />
           <Route path="/services" element={<IndexService />} />
           <Route path="/about" element={<IndexAbout />} />
+          <Route path="/contact" element={<IndexContact />} />
         </Routes>
       </main>
       <Footer />
