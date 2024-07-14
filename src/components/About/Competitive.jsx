@@ -21,7 +21,7 @@ function Competitive() {
   return (
     <div className="w-[100vw] min-h-screen">
       {isMobile ? (
-        <div className="flex flex-col mt-64 items-center w-full px-4">
+        <div className="flex flex-col mt-32 items-center w-full px-4">
           <div className="text-center font-formula w-[80vw] opacity-90 leading-[0.9em] text-white font-extrabold text-7xl my-8">
             BEING COMPETITIVE WHILE HAVING FUN
           </div>
