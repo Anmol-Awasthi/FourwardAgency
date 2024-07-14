@@ -46,7 +46,6 @@ const Content = () => {
           <Route path="/work" element={<IndexWork />} />
           <Route path="/services" element={<IndexService />} />
           <Route path="/about" element={<IndexAbout />} />
-          {/* Add other routes here */}
         </Routes>
       </main>
       <Footer />
