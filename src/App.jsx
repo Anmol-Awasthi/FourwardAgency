@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -42,8 +42,44 @@ const App = () => {
   );
 };
 
+const useDocumentTitle = (title) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+};
+
 const Content = () => {
   const location = useLocation();
+
+  let pageTitle = "FOURWARD";
+
+  switch (location.pathname) {
+    case "/":
+      pageTitle = "FOURWARD";
+      break;
+    case "/work":
+      pageTitle = "Work - FOURWARD";
+      break;
+    case "/services":
+      pageTitle = "Services - FOURWARD";
+      break;
+    case "/about":
+      pageTitle = "About - FOURWARD";
+      break;
+    case "/contact":
+      pageTitle = "Contact - FOURWARD";
+      break;
+    case "/two-percent":
+      pageTitle = "Two Percent - FOURWARD";
+      break;
+    case "/general-terms":
+      pageTitle = "General Terms - FOURWARD";
+      break;
+    default:
+      break;
+  }
+
+  useDocumentTitle(pageTitle);
 
   return (
     <>
@@ -90,7 +126,7 @@ const Content = () => {
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
