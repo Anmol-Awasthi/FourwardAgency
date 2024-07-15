@@ -7,17 +7,17 @@ function Text() {
     <div>
       <div className="md:h-[75vh] h-[40vh] w-full flex items-center justify-center bg-[#C0CAC9]">
         <div className="md:w-[50%] w-[95%] flex flex-col items-center justify-center text-center">
-          <div className="md:text-7xl text-5xl text-[#001415] leading-[0.9em] font-formula text-[#001514cc]">
+          <div className="md:text-7xl text-5xl text-[#001415] leading-[0.9em] font-formula">
             CRAFTING SUCCESS WITH A PURPOSEFUL 2%
           </div>
           <div className="font-neue text-sm md:leading-5 leading-4 opacity-80 md:w-full w-[95%] mt-8 text-[#001514cc]">
-          In the fast-paced world of marketing and audiovisual production, where creativity meets strategy, TWICE stands out not just for its exceptional work but also for its commitment to making a positive impact. This isn't just about capturing moments; it's about creating meaningful change.
+          In the fast-paced world of marketing and audiovisual production, where creativity meets strategy, FOURWARD stands out not just for its exceptional work but also for its commitment to making a positive impact. This isn't just about capturing moments; it's about creating meaningful change.
           </div>
         </div>
       </div>
       <div className="md:h-[75vh] h-[40vh] w-full flex items-center justify-center bg-[#F1F1F1]">
         <div className="md:w-[50%] w-[95%] flex flex-col items-center justify-center text-center">
-        <div className="md:text-7xl text-5xl text-[#001415] leading-[0.9em] font-formula text-[#001514cc]">
+        <div className="md:text-7xl text-5xl text-[#001415] leading-[0.9em] font-formula">
             JOINING FORCES FOR IMPACT
           </div>
           <div className="font-neue text-sm md:leading-5 leading-4 opacity-80 md:w-full w-[95%] mt-8 text-[#001514cc]">
