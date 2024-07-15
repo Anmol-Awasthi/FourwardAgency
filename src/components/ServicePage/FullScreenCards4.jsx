@@ -40,7 +40,7 @@ const FullScreenCards = () => {
           {works.map((work, index) => (
             <motion.div
               key={index}
-              className={`cursor-pointer py-2 border-t border-b border-gray-300 w-full text-left ${
+              className={`cursor-pointer py-2 border-t border-b border-gray-300 w-[95%] text-left ${
                 selectedWork === index ? "text-black" : "text-gray-500"
               }`}
               initial={{ opacity: 0.9 }}
